@@ -1,8 +1,8 @@
 class Person
 
-  def initialize(name, height, hair_colour)
+  def initialize(name, department, hair_colour)
     @name = name
-    @height = height
+    @department = department
     @hair_colour = hair_colour
   end
   
@@ -88,36 +88,34 @@ class Person
     puts "#{@name} 'thinking': Need to heat up my food" 
   end 
   
+  def scary_encounter
+   ht  = Person.new("JW", "n/a", "blonde")
+   staff_member = Person.new("Emily", "LRC", "brown")
+   cj = Person.new("CJ", "SEN", "blond")
+   staff_1 = Person.new("Jane", "Pastoral", "blonde")
+   staff_2 = Person.new("Sheryll", "Finance", "brown")
+   staff_3 = Person.new("Jodie", "Laptops", "brown")
+   staff_4 = Person.new("EK", "Geography/SLT", "brown")
+   staff_5 = Person.new("Em. S", "Marketing", "brown")
+   cj.speak
+   cj.leaves_library
+   staff_member.time_passing
+   ht.enters_library
+   ht.shout_at_staff(staff_member)
+   staff_member.ask(ht)
+   ht.reply(staff_member)
+   staff_member.walk_to_staffroom
+   staff_4.in_background
+   staff_4.stands_at_staffroom_board
+   staff_member.staff_sitting
+   staff_1.sitting
+   staff_2.sitting_two
+   staff_3.sitting_three
+   staff_member.sit_down
+   staff_member.cry_in_staffroom
+   staff_5.passes_through_staffroom
+   cj.enters_staffroom
+  end
+
 end
 
-
-def encounter
- ht  = Person.new("Julia", "5 ft 4", "blonde")
- staff_member = Person.new("Emily", "5 ft 6", "brown")
- cj = Person.new("C", "5 ft 6", "blond")
- staff_1 = Person.new("Jane", "small", "blonde")
- staff_2 = Person.new("Sheryll", "unknown", "brown")
- staff_3 = Person.new("Jodie", "unknown", "brown")
- staff_4 = Person.new("Eoin", "unknown", "brown")
- staff_5 = Person.new("Emma. S", "tall", "brown")
- cj.speak
- cj.leaves_library
- staff_member.time_passing
- ht.enters_library
- ht.shout_at_staff(staff_member)
- staff_member.ask(ht)
- ht.reply(staff_member)
- staff_member.walk_to_staffroom
- staff_4.in_background
- staff_4.stands_at_staffroom_board
- staff_member.staff_sitting
- staff_1.sitting
- staff_2.sitting_two
- staff_3.sitting_three
- staff_member.sit_down
- staff_member.cry_in_staffroom
- staff_5.passes_through_staffroom
- cj.enters_staffroom
-end
-
- encounter
