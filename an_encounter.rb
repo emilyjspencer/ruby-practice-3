@@ -136,11 +136,11 @@ class Person
 end
   def scary_encounter
    ht  = Person.new("JW", "n/a", "blonde")
-   staff_member = Person.new("Emily", "LRC", "brown")
+   staff_member = Person.new("ES", "LRC", "brown")
    cj = Person.new("CJ", "SEN", "blond")
-   staff_1 = Person.new("Jane", "Pastoral", "blonde")
-   staff_2 = Person.new("Sheryll", "Finance", "brown")
-   staff_3 = Person.new("Jodie", "Laptops", "brown")
+   staff_1 = Person.new("JA", "Pastoral", "blonde")
+   staff_2 = Person.new("SW", "Finance", "brown")
+   staff_3 = Person.new("JH", "Laptops", "brown")
    staff_4 = Person.new("EK", "Geography/SLT", "brown")
    staff_5 = Person.new("Em. S", "Marketing", "brown")
    tweedle_dum = Person.new("BB", "Science", "brown")
@@ -172,7 +172,6 @@ end
    tweedle_dee.spew(staff_member)
    staff_member.time_passes
    cj.enters_library_two
-   
    tweedle_dum.enters_library_three
    tweedle_dum.takes_staff_member_to_office(staff_member)
   end
