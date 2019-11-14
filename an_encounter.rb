@@ -6,12 +6,13 @@ class Person
     @hair_colour = hair_colour
   end
   
+  
   def speak
-    puts " etc etc ........ Ends with 'You\'re doing a great job'"
+    puts " talking........ the conversation ends with #{@name} saying: 'You\'re doing a great job'"
   end
 
   def leaves_library
-    puts "CJ leaves the library to go and eat lunch"
+    puts "#{@name} leaves the library to go and eat lunch"
   end
 
   def time_passing
@@ -40,16 +41,65 @@ class Person
   def walk_to_staffroom
     puts " #{@name} walks to the staffroom in a daze - utterly confused as to what just happened"
   end
+  
+  def in_background
+    puts "In the staffroom there is a member of SLT standing by one of the blue boards"
+  end
+  
+  def stands_at_staffroom_board
+    puts "#{@name} 'thinking to himself': I've got so much to do and I have to run detention
+    this evening....."
+  end 
+  
+  def staff_sitting
+    puts "Three members of staff are eating their lunch:"
+  end
+  
+  def sitting
+    puts "#{@name} is chatting and playing with her salad"
+  end
+  
+  def sitting_two
+    puts "#{@name} is talking about the summer holiday - which seems such a long time ago"
+  end
+  
+  def sitting_three
+    puts "#{@name} is chatting away - in need of a break from fixing laptops and dealing
+    with technical problems"
+  end
+
+  def sit_down
+    puts "#{@name} sits down at table in a bit of a state"
+  end
 
   def cry_in_staffroom
     puts " After a couple of minutes, staff member breaks down"
     puts " #{@name} cries: SOBBBBBBBBBBBB I don't understand"
   end 
+  
+  def passes_through_staffroom
+    puts "#{@name} passes through the staffroom looking somewhat harried..."
+    puts "#{@name} 'thinking': Must chase x teacher and x teacher and x teacher
+    for that story for the website"
+  end
+  
+  def enters_staffroom
+    puts "#{@name} enters staffroom and heads to kitchen"
+    puts "#{@name} 'thinking': Need to heat up my food" 
+  end 
+  
 end
 
+
+def encounter
  ht  = Person.new("Julia", "5 ft 4", "blonde")
  staff_member = Person.new("Emily", "5 ft 6", "brown")
  cj = Person.new("C", "5 ft 6", "blond")
+ staff_1 = Person.new("Jane", "small", "blonde")
+ staff_2 = Person.new("Sheryll", "unknown", "brown")
+ staff_3 = Person.new("Jodie", "unknown", "brown")
+ staff_4 = Person.new("Eoin", "unknown", "brown")
+ staff_5 = Person.new("Emma. S", "tall", "brown")
  cj.speak
  cj.leaves_library
  staff_member.time_passing
@@ -58,4 +108,16 @@ end
  staff_member.ask(ht)
  ht.reply(staff_member)
  staff_member.walk_to_staffroom
+ staff_4.in_background
+ staff_4.stands_at_staffroom_board
+ staff_member.staff_sitting
+ staff_1.sitting
+ staff_2.sitting_two
+ staff_3.sitting_three
+ staff_member.sit_down
  staff_member.cry_in_staffroom
+ staff_5.passes_through_staffroom
+ cj.enters_staffroom
+end
+
+ encounter
