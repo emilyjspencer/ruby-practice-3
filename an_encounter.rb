@@ -88,6 +88,7 @@ class Person
     puts "#{@name} 'thinking': Need to heat up my food" 
   end 
   
+end
   def scary_encounter
    ht  = Person.new("JW", "n/a", "blonde")
    staff_member = Person.new("Emily", "LRC", "brown")
@@ -117,5 +118,7 @@ class Person
    cj.enters_staffroom
   end
 
-end
 
+
+  
+scary_encounter
