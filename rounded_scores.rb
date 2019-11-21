@@ -16,4 +16,6 @@ scores.each { |score|
  
 end
 
-average(scores)
+average(scores) 
+
+#=> The average score for Rainbow class is : 66
